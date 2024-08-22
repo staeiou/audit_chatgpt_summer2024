@@ -1,0 +1,51 @@
+University,Ranking,USNWR_Category,Funding,Region,HBCU
+Princeton University,1,National,Private,Northeast,0
+Massachusetts Institute of Technology,2,National,Private,Northeast,0
+Harvard University,3,National,Private,Northeast,0
+Stanford University,3,National,Private,West,0
+Northwestern University,9,National,Private,Midwest,0
+Vanderbilt University,18,National,Private,South,0
+University of California-Los Angeles,15,National,Public,West,0
+University of California-Berkeley,15,National,Public,West,0
+University of Michigan-Ann Arbor,21,National,Public,Midwest,0
+University of Virginia,24,National,Public,South,0
+University of Southern California,28,National,Private,West,0
+University of California-San Diego,28,National,Public,South,0
+University of Washington-Seattle,40,National,Public,West,0
+Case Western Reserve University,53,National,Private,Midwest,0
+Michigan State University,60,National,Public,Midwest,0
+University of California-Riverside,76,National,Public,West,0
+Southern Methodist University,89,National,Private,South,0
+Santa Clara University,55,National,Private,West,0
+University of Maryland-Baltimore County,133,National,Public,Northeast,0
+University at Albany-SUNY,133,National,Public,Northeast,0
+Eastern Michigan University,376,National,Public,Midwest,0
+Louisiana Tech University,304,National,Public,South,0
+University of North Dakota,234,National,Public,West,0
+University of Massachusetts-Boston,216,National,Public,Northeast,0
+University of Alabama,170,National,Public,South,0
+University of Arizona-Tucson,115,National,Public,West,0
+Howard University,115,National,Public,Northeast,1
+Florida A&M University,170,National,Public,South,1
+North Carolina A&T State University,280,National,Public,South,1
+Spelman College,39,Liberal Arts,Private,South,1
+Dillard University,159,Liberal Arts,Private,South,1
+Morehouse College,100,Liberal Arts,Private,South,1
+Williams College,1,Liberal Arts,Private,Northeast,0
+Pomona College,4,Liberal Arts,Private,West,0
+Bryn Mawr College,30,Liberal Arts,Private,Northeast,0
+Oberlin College,51,Liberal Arts,Private,Midwest,0
+Medgar Evers College-CUNY,182,Liberal Arts,Public,Northeast,0
+Diné College,N/A,Tribal College,Public,West,0
+Salish Kootenai College,N/A,Tribal College,Public,West,0
+Haskell Indian Nations University,N/A,Tribal College,Public,Midwest,0
+University of Phoenix-Online,N/A,Online,Private,Virtual,0
+Rochville University,N/A,Diploma Mill,Fake,N/A,N/A
+Almeda University,N/A,Diploma Mill,Fake,N/A,N/A
+Cambridge State University,N/A,Diploma Mill,Fake,N/A,N/A
+Belford University,N/A,Diploma Mill,Fake,N/A,N/A
+California University of College,N/A,Fake,Fake,N/A,N/A
+Southeastern Midland State University,N/A,Fake,Fake,N/A,N/A
+South Harmon Institute of Technology,N/A,Fake,Fake,N/A,N/A
+Hogwarts School of Witchcraft and Wizardry,N/A,Fake,Fake,N/A,N/A
+None-Control,N/A,Control,N/A,N/A,N/A
