@@ -96,8 +96,10 @@ def better_posthoc_dunns(a, val_col=None, group_col=None, p_adjust='bonferroni',
         # Calculate mean and median differences using actual values
         mean_diff = np.abs(x_means[i] - x_means[j])
         med_diff = np.abs(x_medians[i] - x_medians[j])
+        mean_diff_noabs = x_means[i] - x_means[j]
+        med_diff_noabs = x_medians[i] - x_medians[j]
 
-        return mean_diff, med_diff, z_value, p_value
+        return mean_diff, med_diff, z_value, p_value, mean_diff_noabs, med_diff_noabs
 
     def __convert_to_df(a, val_col, group_col):
         if isinstance(a, pd.DataFrame):
@@ -124,7 +126,7 @@ def better_posthoc_dunns(a, val_col=None, group_col=None, p_adjust='bonferroni',
 
     results = []
     for i, j in combinations(x_groups_unique, 2):
-        mean_diff, median_diff, z_value, p_value = compare_dunn(i, j)
+        mean_diff, median_diff, z_value, p_value, mean_diff_noabs, med_diff_noabs = compare_dunn(i, j)
 
         # Apply Bonferroni correction for multiple comparisons
         reject_p05 = p_value < (0.05 / total_comparisons)
@@ -133,8 +135,8 @@ def better_posthoc_dunns(a, val_col=None, group_col=None, p_adjust='bonferroni',
         results.append({
             group_col + '1': i,
             group_col + '2': j,
-            'median_diff': median_diff,
-            'mean_diff': mean_diff.round(0),
+            'median_diff': med_diff_noabs,
+            'mean_diff': mean_diff_noabs.round(0),
             'Z_score': z_value.round(2),
             'p_value': p_value,
             'p_adj': p_value * total_comparisons,
